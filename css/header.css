@@ -1,0 +1,307 @@
+@import url('common.css');
+
+body {}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    transition: .7s;
+}
+.menu {
+    padding-bottom: 10px;
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #080808;
+    line-height: 70px;
+}
+.menu.roll {
+    background: #fff;
+    box-shadow: 1px 1px 1px #080808;
+}
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 50px;
+}
+.logo.roll {
+    color: #080808;
+}
+header .logo img {
+    display: none;
+}
+
+header nav {
+    float: right;
+    text-align: right;
+    line-height: 80px;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 30px;
+    display: inline-block;
+    position: relative;
+    transition: .7s;
+    cursor: pointer;
+}
+header nav a.roll {
+    color: #080808;
+}
+
+header nav a img {
+    width: 80px;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    transition: .7s;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+header nav.active a {
+    filter: blur(10px);
+}
+
+header nav.active a:hover {
+    filter: blur(0px);
+}
+
+nav a:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
+
+/*====================================================================*/
+@media (min-width:769px) and (max-width:1024px) {
+
+    /*===========================header=============================*/
+    header {
+        position: fixed;
+        top: 88%;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        line-height: 90px;
+        transition: .7s;
+        background: #080808;
+    }
+
+
+    .menu {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu.roll {
+        background: #fff;
+        box-shadow: none;
+    }
+
+    header .logo {
+        display: none;
+        /*display: inline-block;*/
+        vertical-align: middle;
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header nav a {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        width: 10%;
+        margin: 0 auto;
+        color: #fff;
+        margin-left: 5px;
+        transition: .7s;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    header nav a.roll {
+        color: #fff;
+    }
+
+    header nav a img {
+        display: block;
+        width: 50px;
+    }
+
+    header nav a:last-of-type {
+        margin-right: 5px;
+    }
+
+}
+
+
+/*====================================================================*/
+@media (max-width:768px) {
+
+    /*===========================header=============================*/
+    header {
+        position: fixed;
+        top: 88%;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        line-height: 90px;
+        transition: .7s;
+        background: #080808;
+    }
+
+
+    .menu {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu.roll {
+        background: #fff;
+        box-shadow: none;
+    }
+
+    header .logo {
+        display: none;
+        /*display: inline-block;*/
+        vertical-align: middle;
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header nav a {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        width: 10%;
+        margin: 0 auto;
+        color: #fff;
+        margin-left: 5px;
+        transition: .7s;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    header nav a.roll {
+        color: #fff;
+    }
+
+    header nav a img {
+        display: block;
+        width: 30px;
+    }
+
+    header nav a:last-of-type {
+        margin-right: 5px;
+    }
+
+}
+
+
+/*====================================================================*/
+@media (max-width:480px) {
+
+    /*===========================header=============================*/
+    header {
+        position: fixed;
+        top: 88%;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        line-height: 90px;
+        transition: .7s;
+        background: #080808;
+    }
+
+
+    .menu {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .menu.roll {
+        background: #fff;
+        box-shadow: none;
+    }
+
+    header .logo {
+        display: none;
+        /*display: inline-block;*/
+        vertical-align: middle;
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header nav a {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        width: 13%;
+        margin: 0 auto;
+        color: #fff;
+        margin-left: 0px;
+        transition: .7s;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    header nav a.roll {
+        color: #fff;
+    }
+
+    header nav a img {
+        display: block;
+        width: 25px;
+    }
+
+    header nav a:last-of-type {
+        margin-right: 5px;
+    }
+
+}

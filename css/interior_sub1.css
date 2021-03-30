@@ -1,0 +1,102 @@
+@import url('common.css');
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.int_h {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.a_1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.a_1 ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a_1 ul li {
+    width: 15%;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+.a_1 ul li figure img {
+    width: 100%;
+}
+
+.a_1 ul li figcaption p {
+    color: #222;
+    font-size: 12px;
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .a_1 ul li {
+        width: 30%;
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    .a_1 ul li figure img {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .a_1 ul {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .a_1 ul li {
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    .a_1 ul li figure img {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .a_1 ul {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .a_1 ul li {
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    .a_1 ul li figure img {
+        width: 100%;
+    }
+}

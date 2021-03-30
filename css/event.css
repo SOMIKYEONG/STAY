@@ -1,0 +1,440 @@
+@import url('common.css');
+
+body {}
+
+/*==========================================================*/
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.eve_a {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.eve_a h2 {
+    width: 100%;
+    margin: 200px 0 50px 0;
+    text-align: center;
+}
+
+.a_1 {
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.a_1 ul {
+    margin: 0 auto;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.a_1 ul li {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+#a_1_1:after {
+    content: '|';
+    padding-left: 15px;
+}
+
+.eve_b {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.b_1 h2 {
+    text-align: center;
+    color: #6a5746;
+}
+
+.b_1 p {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.b_2 {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.b_2 ul {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.b_2 ul li {
+    width: 40%;
+    height: 150px;
+    margin: 0 auto;
+    background: #efdbd0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.b_2 ul li p {
+    font-size: 1em;
+}
+
+.b_2 ul li p:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    background: #dabcb4;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.b_2 ul li p:nth-of-type(2) {
+    width: 30%;
+    padding-left: 20px;
+}
+
+.b_2 ul li p:nth-of-type(3) {
+    width: 70%;
+    border-left: 1px solid gray;
+    padding-left: 30px
+}
+
+.b_2 ul li p mark {
+    background: none;
+    color: #5d692d;
+    font-size: 1px;
+    padding: 15px 0;
+}
+
+.eve_c {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.eve_c h2 {
+    color: #5b6183;
+}
+
+.eve_c p {
+    padding-bottom: 50px;
+}
+
+.eve_c ul {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.eve_c ul li {
+    padding: 30px;
+}
+
+.eve_c ul li img {
+    width: 100%;
+}
+
+/*====================================================================*/
+@media (min-width:769px) and (max-width:1024px) {
+
+    /* ===========================main===========================*/
+
+    .eve_a h2 {
+        width: 100%;
+        margin: 100px 0 50px 0;
+        text-align: center;
+    }
+    
+    .eve_b {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .b_2 {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .b_2 ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .b_2 ul li {
+        width: 49%;
+        height: 150px;
+        margin: 0 auto;
+        background: #efdbd0;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .b_2 ul li p {
+        font-size: 1em;
+    }
+
+    .b_2 ul li p:nth-of-type(1) {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        background: #dabcb4;
+        border-radius: 10px;
+        padding: 0 10px;
+        color: #fff;
+    }
+
+    .b_2 ul li p:nth-of-type(2) {
+        width: 30%;
+        padding-left: 0px;
+    }
+
+    .b_2 ul li p:nth-of-type(3) {
+        width: 70%;
+        border-left: 1px solid gray;
+        padding-left: 30px
+    }
+
+    .eve_c {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .eve_c h2 {
+        color: #5b6183;
+    }
+
+    .eve_c p {
+        padding-bottom: 50px;
+    }
+
+    .eve_c ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .eve_c ul li {
+        padding: 30px;
+    }
+
+    .eve_c ul li img {
+        width: 100%;
+    }
+
+}
+
+
+/*====================================================================*/
+@media (max-width:768px) {
+    /* ===========================main===========================*/
+    .eve_a h2 {
+        width: 100%;
+        margin: 50px 0 50px 0;
+        text-align: center;
+    }
+    .eve_b {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .b_2 {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .b_2 ul {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .b_2 ul li {
+        width: 90%;
+        height: 150px;
+        margin: 50px auto;
+        background: #efdbd0;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .b_2 ul li p {
+        font-size: 1em;
+    }
+
+    .b_2 ul li p:nth-of-type(1) {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        background: #dabcb4;
+        border-radius: 10px;
+        padding: 0 10px;
+        color: #fff;
+    }
+
+    .b_2 ul li p:nth-of-type(2) {
+        width: 30%;
+        padding-left: 0px;
+    }
+
+    .b_2 ul li p:nth-of-type(3) {
+        width: 70%;
+        border-left: 1px solid gray;
+        padding-left: 30px
+    }
+
+    .eve_c {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .eve_c h2 {
+        color: #5b6183;
+    }
+
+    .eve_c p {
+        padding-bottom: 50px;
+    }
+
+    .eve_c ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .eve_c ul li {
+        padding: 5px;
+    }
+
+    .eve_c ul li img {
+        width: 100%;
+    }
+
+}
+
+
+/*====================================================================*/
+@media (max-width:480px) {
+    /* ===========================main===========================*/
+    .eve_a h2 {
+        width: 100%;
+        margin: 50px 0 50px 0;
+        text-align: center;
+    }
+    .eve_b {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .b_2 {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .b_2 ul {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .b_2 ul li {
+        width: 90%;
+        height: 150px;
+        margin: 50px auto;
+        background: #efdbd0;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .b_2 ul li p {
+        font-size: 1em;
+    }
+
+    .b_2 ul li p:nth-of-type(1) {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        background: #dabcb4;
+        border-radius: 10px;
+        padding: 0 10px;
+        color: #fff;
+    }
+
+    .b_2 ul li p:nth-of-type(2) {
+        width: 30%;
+        padding-left: 0px;
+    }
+
+    .b_2 ul li p:nth-of-type(3) {
+        width: 70%;
+        border-left: 1px solid gray;
+        padding-left: 30px
+    }
+
+    .eve_c {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .eve_c h2 {
+        color: #5b6183;
+        font-size: 25px;
+    }
+
+    .eve_c p {
+        padding-bottom: 50px;
+        font-size: 13px;
+    }
+
+    .eve_c ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .eve_c ul li {
+        padding: 5px;
+    }
+
+    .eve_c ul li img {
+        width: 100%;
+    }
+}

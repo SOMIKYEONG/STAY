@@ -1,0 +1,78 @@
+.drawsvg,
+svg {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.stroke {
+    stroke: darkolivegreen;
+    stroke-width: 10px;
+    stroke-dasharray: 0 250;
+    stroke-opacity: 1;
+    fill: none;
+   
+    animation: stroke_offset 8s infinite;
+    animation-timing-function: cubic-bezier(.25, .46, .45, .94)
+}
+
+@keyframes stroke_offset {
+    100%,
+    0% {
+        stroke-dasharray: 0 250;
+        stroke-opacity: 1
+    }
+    50%,
+    75% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: .75
+    }
+    55%,
+    70% {
+        stroke-dasharray: 250 0;
+        stroke-opacity: 0
+    }
+}
+
+.fill {
+    fill: darkolivegreen;
+    text-shadow: #fdd16e 30px 0 10px;
+    fill-opacity: 0;
+    
+    animation: fill_offset 8s infinite;
+    animation-timing-function: cubic-bezier(.25, .46, .45, .94)
+}
+
+@keyframes fill_offset {
+    100%,
+    25%,
+    35%,
+    90% {
+        fill-opacity: 0
+    }
+    50%,
+    70% {
+        fill-opacity: 1
+    }
+}
+
+#fade-text {
+    font-family: 'Alex Brush', cursive;
+    font-size: 4.5em;
+}
+
+svg {
+    position: absolute;
+}
+
+
+/*====================================================================*/
+@media (min-width:769px) and (max-width:1024px) {}
+
+
+/*====================================================================*/
+@media (max-width:768px) {}
+
+
+/*====================================================================*/
+@media (max-width:480px) {}

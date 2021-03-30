@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sticker</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .sticker {
+            position: relative;
+            width: 16%;
+            height: 16%;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /*./*/
+        .example-1 .sticker-img {
+            background-image: url("img/int_c1.jpg");
+        }
+
+        .example-2 .sticker-img {
+            background-image: url("img/int_c2.jpg");
+        }
+
+        .example-3 .sticker-img {
+            background-image: url("img/int_c3.jpg");
+        }
+
+        .example-4 .sticker-img {
+            background-image: url("img/int_c4.jpg");
+        }
+
+        .example-5 .sticker-img {
+            background-image: url("img/int_c5.jpg");
+        }
+
+        @media (min-width:769px) and (max-width:1024px) {
+            .sticker {
+                display: block;
+                position: relative;
+                width: 33%;
+                height: auto;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        @media (max-width:768px) {
+            .sticker {
+                display: block;
+                position: relative;
+                width: 33%;
+                height: auto;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+        @media (max-width:480px) {
+            .sticker {
+                display: block;
+                position: relative;
+                width: 33%;
+                height: auto;
+                margin: 0 auto;
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sticker example-1"></div>
+    <div class="sticker example-2"></div>
+    <div class="sticker example-3"></div>
+    <div class="sticker example-4"></div>
+    <div class="sticker example-5"></div>
+
+    <script src="sticker.min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            Sticker.init('.sticker');
+        }
+
+    </script>
+</body>
+
+</html>
